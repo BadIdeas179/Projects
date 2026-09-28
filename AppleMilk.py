@@ -1,5 +1,6 @@
 from random import choice # using random.choice()
 def applemilk(main, num, a, m): # main function
+  ar = int() + int() + int() + int()
   return True
 # Here will be start and explanations
 nums = {str(i) for i in range(1000, 10000)} # all four - digit numbers
