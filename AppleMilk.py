@@ -11,9 +11,10 @@ for i in nc:
     nums.discard(i) # delete bad numbers
 nc = nums.copy() # copy nc for nums
 while len(nums) > 1: # main loop
+  main = choice(nums) # random
+  print(main)
   a = int(input('Apples: ')) # input apples
   b = int(input('Milks: ')) # input milk
-  main = choice(nums) # random
   for num in nc:
     if not applemilk(main, num, a, m):
       nums.discard(num) # delete bad numbers
