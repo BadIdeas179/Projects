@@ -12,7 +12,7 @@ for i in nc:
 nc = nums.copy() # copy nc for nums
 while len(nums) > 1: # main loop
   a = int(input('Apples: ')) # input apples
-  b = int(input('Milks: ') # input milk
+  b = int(input('Milks: ')) # input milk
   main = choice(nums) # random
   for num in nc:
     if not applemilk(main, num, a, m):
