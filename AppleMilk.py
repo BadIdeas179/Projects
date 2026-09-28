@@ -8,10 +8,15 @@ for i in nc:
   if sorted(list(i)) != sorted(list(set(list(i)))):
     nums.discard(i) # delete bad numbers
 nc = nums.copy() # copy nc for nums
-while len(nums) > 1:
-  a = int(input('Apples: '))
-  b = int(input('Milks: ')
-  main = choice(nums)
+while len(nums) > 1: # main loop
+  a = int(input('Apples: ')) # input apples
+  b = int(input('Milks: ') # input milk
+  main = choice(nums) # random
   for num in nc:
-    if applemilk(main, num, a, m):
-      
+    if not applemilk(main, num, a, m):
+      nums.discard(num) # delete bad numbers
+  nc = nums.copy() # copy nc for nums
+if nums: # final
+  print(f'Your number is{nums[0]}.')
+else:
+  print('There isn\'t any')
